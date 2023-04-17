@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Blog culture du numérique</title>
+    <meta name="description" content="Notre démarche d'éco-conception" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav>
+      <div>
+        <a href="index.html"><img src="images/logo.png" alt="Logo" /></a>
+        <button>
+          <span></span>
+        </button>
+        <div>
+          <ul>
+            <li>
+              <a href="index.html#">Accueil</a>
+            </li>
+            <li>
+              <a href="index.html#articles"> Articles </a>
+              <ul>
+                <li>
+                  <a href="article.html"
+                    >Quelles conditions de production pour le numérique?</a
+                  >
+                </li>
+                <li>
+                  <a href="#">Le numérique nous rend-il plus intelligent ?</a>
+                </li>
+                <li>
+                  <a href="#"
+                    >Le numérique permet-il de réduire nos impacts
+                    environnementaux ?</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="technique.html">Démarche technique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div>
+      <header>
+        <div class="container">
+          <h1>Démarche technique</h1>
+          <h2 class="small">
+            Comment avons-nous augmenter les perfomances du site et réduis son
+            impact ?
+          </h2>
+        </div>
+      </header>
+
+      <section id="article" class="container">
+        <aside>
+          <nav>
+            <ol>
+              <li><a href="#introduction">Introduction</a></li>
+              <li><a href="#mise_en_page">Mise en page</a></li>
+              <li><a href="#accessibilite">Accessibilité</a></li>
+              <li><a href="#performances">Performances</a></li>
+              <li><a href="#conclusion">Conclusion</a></li>
+              <li><hr /></li>
+              <li><a href="#sources">Sources</a></li>
+            </ol>
+          </nav>
+        </aside>
+
+        <div>
+          <section id="introduction">
+            <h3>Introduction</h3>
+            <p>
+              Afin d'inscrire notre blog dans une démarche d'éco-conception,
+              nous avons décidé de nous intéresser à l'impact environnemental
+              qu'il peut avoir. Nous avons donc effectuer différentes analyses
+              afin d'accroitre au maximum les performances de notre site et de
+              réduire son impact.
+            </p>
+          </section>
+          <section id="mise_en_page">
+            <h3>Mise en page</h3>
+            <p>
+              Tout d'abord, pour des questions d'ergonomie, nous avons utiliser
+              une mise en page simple et claire. Nous avons également choisi
+              d'utiliser une police de caractère lisible et agréable à lire.
+              Enfin, nous avons choisi de mettre en avant les articles les plus
+              récents afin de les rendre plus accessibles. Nous avons choisi des
+              couleurs contrastées afin de rendre notre site plus agréable à
+              l'oeil et plus accessible par tout le monde. Toutes ces démarches
+              permettent de rendre notre site plus facile à naviguer et ainsi
+              éviter de se rendre sur des pages sur lesquelles l'utilisateur ne
+              souhaitait pas aller, et donc réduire l'impact de notre site.
+            </p>
+          </section>
+          <section id="accessibilite">
+            <h3>Accessibilité</h3>
+            En utilisant Lighthouse, nous avons pu analyser l'accessibilité de
+            notre site. Nous avons obtenu un score de 70% à cause de certains
+            oublis comme le fait de ne pas avoir mis de texte alternatif à nos
+            images. Nous avons donc corrigé ces erreurs afin d'augmenter notre
+            score d'accessibilité. Après avoir corriger ces erreurs, nous avons
+            obtenu un score de 100%.
+          </section>
+          <section id="performances">
+            <h3>Performances</h3>
+            <p>
+              Toujours en utilisant Lighthouse, nous avons pu analyser les
+              performances de notre site et nous avons pu observer 99% de
+              performances.<br />
+              <img src="images/score_lighthouse.webp" alt="Lighthouse" />
+              Nous avons également pu observer des résultats similaires avec
+              GTMetrix
+              <img src="images/gtmetrix.webp" alt="GTMetrix Stats" />
+              Avec WebsiteCarbon, nous avons pu observer que notre site a un
+              impact environnemental relativement faible, ce qui est très
+              positif.
+              <img src="images/websitecarbon.webp" alt="WebsiteCarbon Stats" />
+              En effet, pour améliorer les performances de notre site, nous
+              avons optimisé les images afin de réduire leur poids en réduisant
+              leurs résolutions et en les compressant. Nous avons également pris
+              la décision de convertir nos images en format webp afin de réduire
+              leur poids.<br />
+              Nous avons également minifier notre css afin de réduire son poids
+              et ainsi réduire le temps de chargement de notre site. De plus,
+              cette réduction de poids permet de réduire l'utilisation de la
+              bande passante et donc de réduire l'impact environnemental de
+              notre site.<br />
+            </p>
+          </section>
+          <section id="conclusion">
+            <h3>Conclusion</h3>
+            <p>
+              Nous avons donc pu observer que notre site a un impact
+              environnemental relativement faible grâce aux différentes
+              optimisations que nous avons effectuées.
+            </p>
+          </section>
+          <hr />
+          <section id="sources">
+            <h3>📚 Sources</h3>
+            <ul>
+              <li>
+                <a href="https://gtmetrix.com/" target="_blank"> GTMetrix </a>
+              </li>
+              <li>
+                <a href="https://websitecarbon.com/" target="_blank">
+                  WebsiteCarbon
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Par
+        <span style="font-weight: bold; text-transform: uppercase">
+          Melvil Pasdeloup TP D & Brandon Clément TP D
+        </span>
+        - BUT MMI 2023 - Culture du numérique
+      </p>
+    </footer>
+  </body>
+</html>
